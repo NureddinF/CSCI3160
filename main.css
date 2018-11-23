@@ -1,0 +1,12 @@
+.nav-item {
+    padding:0px 10px;
+    font-size: larger;
+}
+
+.main-container {
+    padding: 0px;
+}
+
+.course-list, .main-content {
+    padding: 0px;
+}
