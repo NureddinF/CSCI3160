@@ -21,7 +21,7 @@
 				<img src="images/dalImage.jpg" height= "100" width= "250" alt="dal">
 			</div>
 			<div class = "col-md-4 text-center">
-				 <h1>Dropbox</h1>
+				 <h1>Grades</h1>
 			 </div>
 			<div class="col-md-4 text-right">
 				<button class="glyphicon glyphicon-envelope"></button>&nbsp&nbsp
@@ -54,14 +54,13 @@
                     CourseList
                   </a>
                   <a href="course.html" class="list-group-item list-group-item-action">Course1</a>
-                  <a href="course2.html" class="list-group-item list-group-item-action">Course2</a>
-                  <a href="course3.html" class="list-group-item list-group-item-action">Course3</a>
-                  <a href="course4.html" class="list-group-item list-group-item-action">Course4</a>
-                  <a href="course5.html" class="list-group-item list-group-item-action">Course5</a>
+                  <a href="course.html" class="list-group-item list-group-item-action">Course2</a>
+                  <a href="course.html" class="list-group-item list-group-item-action">Course3</a>
+                  <a href="course.html" class="list-group-item list-group-item-action">Course4</a>
+                  <a href="course.html" class="list-group-item list-group-item-action">Course5</a>
                     
                 </div>
 			</div>
-
 			<div class="col-md-6 pl-5 h-100">
 				<div id="accordion">
 					<div class="card">
@@ -80,22 +79,26 @@
 								  <thead>
 								    <tr>
 								      <th style="width: 30%" scope="col">Assignments</th>
-								      <th scope="col">Files Submitted</th>
+								      <th scope="col">Grades</th>
+								      <th scope="col">Feedback</th>
 								    </tr>
 								  </thead>
 								  <tbody>
-								    <tr>
-								      <td>Assignment1</td>
-								      <td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-								    </tr>
-								    <tr>
-								      <td>Assignment2</td>
-								      <td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-								    </tr>
-								    <tr>
-								      <td>Assignment3</td>
-								      <td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-								    </tr>
+								  	<tr>
+								  		<td>Assignment1</td>
+								  		<td>90%</td>
+								  		<td>Good job</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment2</td>
+								  		<td>92%</td>
+								  		<td>Nice</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment3</td>
+								  		<td>80%</td>
+								  		<td>Work hard</td>
+								  	</tr>
 								  </tbody>
 								</table>
 
@@ -103,56 +106,38 @@
 									<thead>
 										<tr>
 											<th style="width: 30%" scope="col">Labs</th>
-											<th scope="col">Files Submitted</th>
+											<th scope="col">Grades</th>
+											<th scope="col">Feedback</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>Lab1</td>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 										<tr>
 											<td>Lab2</td>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
+
 										<tr>
 											<td>Lab3</td>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 									</tbody>
-								</table>
+							</table>
 
-
-							</div>
-						</div>
 					</div>
-
-
-					<!-- Modal -->
-					<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLabel">Upload File</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        Upload Assignment Here. Not Implemented
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					        <button type="button" class="btn btn-warning">Upload</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
+				</div>
+			</div>
 
 					<div class="card">
 						<div class="card-header" id="headingTwo">
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<button class=" btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 									Course2
 								</button>
 							</h5>
@@ -162,62 +147,69 @@
 							<div class="card-body">
 
 								<table class="table table-striped">
-									<thead>
-										<tr>
-											<th style="width: 30%" scope="col">Assignments</th>
-											<th scope="col">Files Submitted</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Assignment1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-										<tr>
-											<td>Assignment2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-										<tr>
-											<td>Assignment3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-									</tbody>
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Assignments</th>
+								      <th scope="col">Grades</th>
+								      <th scope="col">Feedback</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								  	<tr>
+								  		<td>Assignment1</td>
+								  		<td>80%</td>
+								  		<td>Good </td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment2</td>
+								  		<td>62%</td>
+								  		<td>-</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment3</td>
+								  		<td>50%</td>
+								  		<td>Work hard</td>
+								  	</tr>
+								  </tbody>
 								</table>
 
 								<table class="table table-striped">
 									<thead>
 										<tr>
 											<th style="width: 30%" scope="col">Labs</th>
-											<th scope="col">Files Submitted</th>
+											<th scope="col">Grades</th>
+											<th scope="col">Feedback</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Lab1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab1</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 										<tr>
-											<td>Lab2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab2</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
+
 										<tr>
-											<td>Lab3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab3</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 									</tbody>
-								</table>
+							</table>
 
-
-							</div>
 						</div>
 					</div>
-
-
+				</div>
+			</div>
 
 					<div class="card">
 						<div class="card-header" id="headingThree">
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<button class=" btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 									Course3
 								</button>
 							</h5>
@@ -227,60 +219,67 @@
 							<div class="card-body">
 
 								<table class="table table-striped">
-									<thead>
-										<tr>
-											<th style="width: 30%" scope="col">Assignments</th>
-											<th scope="col">Files Submitted</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Assignment1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-										<tr>
-											<td>Assignment2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-										<tr>
-											<td>Assignment3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-									</tbody>
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Assignments</th>
+								      <th scope="col">Grades</th>
+								      <th scope="col">Feedback</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								  	<tr>
+								  		<td>Assignment1</td>
+								  		<td>74%</td>
+								  		<td>-</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment2</td>
+								  		<td>100%</td>
+								  		<td>Nice</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment3</td>
+								  		<td>40%</td>
+								  		<td>Work hard</td>
+								  	</tr>
+								  </tbody>
 								</table>
 
 								<table class="table table-striped">
 									<thead>
 										<tr>
 											<th style="width: 30%" scope="col">Labs</th>
-											<th scope="col">Files Submitted</th>
+											<th scope="col">Grades</th>
+											<th scope="col">Feedback</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Lab1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab1</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 										<tr>
-											<td>Lab2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab2</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
+
 										<tr>
-											<td>Lab3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab3</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 									</tbody>
-								</table>
-
-
-							</div>
+							</table>
 						</div>
 					</div>
+				</div>
 
 					<div class="card">
 						<div class="card-header" id="headingFour">
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<button class=" btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 									Course4
 								</button>
 							</h5>
@@ -290,60 +289,68 @@
 							<div class="card-body">
 
 								<table class="table table-striped">
-									<thead>
-										<tr>
-											<th style="width: 30%" scope="col">Assignments</th>
-											<th scope="col">Files Submitted</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Assignment1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-										<tr>
-											<td>Assignment2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-										<tr>
-											<td>Assignment3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-										</tr>
-									</tbody>
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Assignments</th>
+								      <th scope="col">Grades</th>
+								      <th scope="col">Feedback</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								  	<tr>
+								  		<td>Assignment1</td>
+								  		<td>90%</td>
+								  		<td>excellent</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment2</td>
+								  		<td>82%</td>
+								  		<td>Nice</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment3</td>
+								  		<td>80%</td>
+								  		<td>good resources used</td>
+								  	</tr>
+								  </tbody>
 								</table>
 
 								<table class="table table-striped">
 									<thead>
 										<tr>
 											<th style="width: 30%" scope="col">Labs</th>
-											<th scope="col">Files Submitted</th>
+											<th scope="col">Grades</th>
+											<th scope="col">Feedback</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Lab1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab1</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 										<tr>
-											<td>Lab2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab2</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
+
 										<tr>
-											<td>Lab3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab3</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 									</tbody>
-								</table>
+							</table>
 
-
-							</div>
-						</div>
 					</div>
+				</div>
+			</div>
 
 					<div class="card">
 						<div class="card-header" id="headingFive">
 							<h5 class="mb-0">
-								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								<button class=" btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 									Course5
 								</button>
 							</h5>
@@ -356,22 +363,26 @@
 								  <thead>
 								    <tr>
 								      <th style="width: 30%" scope="col">Assignments</th>
-								      <th scope="col">Files Submitted</th>
+								      <th scope="col">Grades</th>
+								      <th scope="col">Feedback</th>
 								    </tr>
 								  </thead>
 								  <tbody>
-								    <tr>
-								      <td>Assignment1</th>
-								      <td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-								    </tr>
-								    <tr>
-								      <td>Assignment2</th>
-								      <td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-								    </tr>
-								    <tr>
-								      <td>Assignment3</th>
-								      <td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
-								    </tr>
+								  	<tr>
+								  		<td>Assignment1</td>
+								  		<td>90%</td>
+								  		<td>-</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment2</td>
+								  		<td>92%</td>
+								  		<td>nice answers</td>
+								  	</tr>
+								  	<tr>
+								  		<td>Assignment3</td>
+								  		<td>80%</td>
+								  		<td>-</td>
+								  	</tr>
 								  </tbody>
 								</table>
 
@@ -379,34 +390,36 @@
 									<thead>
 										<tr>
 											<th style="width: 30%" scope="col">Labs</th>
-											<th scope="col">Files Submitted</th>
+											<th scope="col">Grades</th>
+											<th scope="col">Feedback</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Lab1</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab1</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 										<tr>
-											<td>Lab2</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab2</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
+
 										<tr>
-											<td>Lab3</th>
-											<td>0<button data-toggle="modal" data-target="#uploadModal" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+											<td>Lab3</td>
+											<td>0</td>
+											<td>-</td>
 										</tr>
 									</tbody>
-								</table>
-
-
-							</div>
-						</div>
+							</table>
 					</div>
 				</div>
-			</div> <!-- end of middle section-->
-
-			<!-- https://bootsnipp.com/snippets/featured/even-better-calendar -->
-			<div class="col-md-4">
+			</div>
+		</div>
+					<!-- grade section ends -->
+		<div class="col-md-4">			
+				<!-- https://bootsnipp.com/snippets/featured/even-better-calendar -->
 				<div class="span12 float-right">
     		<table class="table-condensed table-bordered table-striped">
                 <thead>
