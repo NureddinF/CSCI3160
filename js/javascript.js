@@ -7,7 +7,6 @@ function openAssignments(){
 	var assign = document.getElementById("assignment-content");
 	var lab = document.getElementById("lab-content");
 	var grad = document.getElementById("grade-content");
-	var grad = document.getElementById("grade-content");
 
 	lec.style.display = "none";
 	quiz.style.display = "none";
