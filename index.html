@@ -14,140 +14,44 @@
 </head>
 <body>
 
-	<div class=" bg-white border-bottom border-right border-left ml-5 mr-5">
+	<div class="bg-white border-bottom border-right border-left ml-5 mr-5 pb-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 text-left">
 				<img style="float:left;" src="images/dalImage.jpg" height= "100" width= "250" alt="dal">
 			</div>
 			<div class = "col-md-4 text-center">
-				 <h1>Home</h1>
+				 <h1>BrightSpace</h1>
 			 </div>
-			<div class="col-md-4 text-right">
-				<button class="glyphicon glyphicon-envelope"></button>&nbsp&nbsp
-				<a style="border: 1px solid black; padding: 5px;" class="glyphicon glyphicon-user"> Profile</a>
-			</div>
-		<div class="row">
-			<div class="col-md-12">
-				<nav class="navbar navbar-expand-sm navbar-light">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">BrightSpace</a>
-					</div>
-					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item "><a class="nav-link" href="allGrades.html">GradeBook</a></li>
-						<li class="nav-item "><a class="nav-link" href="Dropbox.html">Dropbox</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
 		</div>
 	</div>
 </div>
 
-<div class= " main-container bg-light pt-5 border-bottom border-right border-left ml-5 mr-5">
-	<div class="container">
-		<div class="row">
-            
-			<div class=" course-list col-md-2 float-left">
-				<div class="list-group">
-                  <a href="#" class=" list-group-item-warning list-group-item">
-                    CourseList
-                  </a>
-                  <a href="course.html" class="list-group-item list-group-item-action">Course1</a>
-                  <a href="course2.html" class="list-group-item list-group-item-action">Course2</a>
-                  <a href="course3.html" class="list-group-item list-group-item-action">Course3</a>
-                  <a href="course4.html" class="list-group-item list-group-item-action">Course4</a>
-                  <a href="course5.html" class="list-group-item list-group-item-action">Course5</a>
-                    
+<div class="login-container bg-light pt-5 mb-auto border-bottom border-right border-left ml-5 mr-5">
+	<div class="container-fluid mb-auto">
+        <h1 class="text-center pb-5"> Welcome! Please Login in.</h1>
+		<div class="row w-25 mx-auto">
+            <div class="col-md-12 pb-3 pt-3">
+                    <!-- buttons to pick sign up and sends sign up in url string -->
+                    <form method="post" action="mainFaculty.html">
+                        <button class="btn btn-primary btn-block" type="submit">Faculty</button>    
+                    </form>
                 </div>
-			</div>
             
-			<div class="main-content col-md-6 pl-5 h-100">
-				<div class="jumbotron">
-					<h4> ANNOUNCMENTS </h4>
-				</div>
-				<div class="jumbotron">
-					<h4> UPCOMING EVENTS </h4>
-				</div>
-
-			</div>
-			<!-- https://bootsnipp.com/snippets/featured/even-better-calendar -->
-			<div class="calendar col-md-4">
-				<div class="span12 float-right">
-    		<table class="table-condensed table-bordered table-striped">
-                <thead>
-                    <tr>
-                      <th colspan="7">
-                        <span class="btn-group">
-                            <a class="btn"><i class="icon-chevron-left"></i></a>
-                        	<a class="btn active">November 2018</a>
-                        	<a class="btn"><i class="icon-chevron-right"></i></a>
-                        </span>
-                      </th>
-                    </tr>
-                    <tr>
-                        <th>Su</th>
-                        <th>Mo</th>
-                        <th>Tu</th>
-                        <th>We</th>
-                        <th>Th</th>
-                        <th>Fr</th>
-                        <th>Sa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="muted">29</td>
-                        <td class="muted">30</td>
-                        <td class="muted">31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td class="btn-primary"><strong>20</strong></td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td class="muted">1</td>
-                        <td class="muted">2</td>
-                        <td class="muted">3</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="col-md-12 pb-3 pt-3">
+                <!-- buttons to pick login and sends login in url string -->
+                <form method="post" action="mainStudent.html">
+                    <button class="btn btn-secondary btn-block" type="submit">Student</button>
+                </form>
+            </div>
         </div>
-			</div>
-		</div>
 	</div>
 </div>
+
+<footer class="bg-white border mr-5 ml-5 block-inline p-5">
+
+    <p> &copy 2018, All Rights Reserved.</p>
+
+</footer>
 </body>
 </html>
