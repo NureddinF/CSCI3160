@@ -1,3 +1,8 @@
+body{
+    height:100%;
+    margin:auto;
+}
+
 .nav-item {
     padding:0px 10px;
     font-size: larger;
@@ -33,5 +38,9 @@ a.nav-link:hover {
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     border-bottom: 2px solid black !important;
     padding-bottom: 0px;
+
+}
+.login-container{
+    padding-bottom:15%;
 
 }
