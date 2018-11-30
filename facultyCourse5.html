@@ -36,7 +36,7 @@
 					</div>
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link" href="mainFaculty.html">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="allGrades.html">GradeBook</a></li>
+						<li class="nav-item"><a class="nav-link" href="faculty grade.html">GradeBook</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -54,7 +54,7 @@
                   <a href="#" class=" list-group-item-warning list-group-item">
                     Course Content
                   </a>
-                  <a href="facultyCourse.html" class="list-group-item list-group-item-action ">Course1</a>
+                  <a href="facultyCourse.html" class="list-group-item list-group-item-action">Course1</a>
                   <a href="facultyCourse2.html" class="list-group-item list-group-item-action">Course2</a>
                   <a href="facultyCourse3.html" class="list-group-item list-group-item-action">Course3</a>
                   <a href="facultyCourse4.html" class="list-group-item list-group-item-action">Course4</a>
@@ -137,6 +137,94 @@
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					        <button data-dismiss="modal" type="button" class="btn btn-warning" data-toggle="modal" data-target="#uploadModal">Upload</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="modal fade" id="uploadModalGrades" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Upload Marks</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+
+					      	<table class="table table-striped">
+								  <thead>
+								    <tr>
+								      <th style="width: 50%" scope="col">Student Name</th>
+								      <th scope="col"> Marks</th>
+
+								      
+								    </tr>
+								  </thead>
+								  <tbody>
+								  	<tr>
+								  		<td>Student 1</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 2</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 3</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 4</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 5</td>
+								  		<td> <input type="number" min="0" max="100"name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 6</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 7</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+
+								  	<tr>
+								  		<td>Student 8</td>
+								  		<td> <input type="number" min="0" max="100" name="input Marks"> 
+								  		</td>
+								  		
+								  	</tr>
+								  </tbody>
+								</table>
+
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-warning">Upload</button>
 					      </div>
 					    </div>
 					  </div>
@@ -316,73 +404,55 @@
 
                 <div class="mt-5" id="grade-content" style="display:none">
                     <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0 text-center">
-                                <label>
-                                    Grades
-                                </label>
-                            </h5>
-                        </div>
-                        
-                            <div class="card-body">
+						<div class="card-header text-center" id="headingOne">
+							<h5 class="mb-0">
+								<label> Grades </label>
+							</h5>
+						</div>
 
-                                <table class="table table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="width: 30%" scope="col">Assignments</th>
-                                      <th scope="col">Grades</th>
-                                      <th scope="col">Feedback</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                        <td>Assignment1</td>
-                                        <td>90%</td>
-                                        <td>Good job</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Assignment2</td>
-                                        <td>92%</td>
-                                        <td>Nice</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Assignment3</td>
-                                        <td>80%</td>
-                                        <td>Work hard</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
 
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th style="width: 30%" scope="col">Labs</th>
-                                            <th scope="col">Grades</th>
-                                            <th scope="col">Feedback</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Lab1</td>
-                                            <td>0</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lab2</td>
-                                            <td>0</td>
-                                            <td>-</td>
-                                        </tr>
+								<table class="table table-striped">
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Assessment</th>
+								      <th scope="col">Avg Marks</th>
 
-                                        <tr>
-                                            <td>Lab3</td>
-                                            <td>0</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                            </table>
+								      
+								    </tr>
+								  </thead>
+								  <tbody>
+								  	<tr>
+								  		<td>Assignment1</td>
+								  		<td>90% 
+								  		<button data-toggle="modal" data-target="#uploadModalGrades" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+								  		
+								  	</tr>
+								  	<tr>
+								  		<td>Midterm 1</td>
+								  		<td>92%
+								  		<button data-toggle="modal" data-target="#uploadModalGrades" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+								  		
+								  	</tr>
+								  	<tr>
+								  		<td>Lab 1</td>
+								  		<td>80%
+								  		<button data-toggle="modal" data-target="#uploadModalGrades" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
 
-                            </div>
-                        </div>
+								  	<tr>
+								  		<td> Assignment 2</td>
+								  		<td> 70%
+								  			<button data-toggle="modal" data-target="#uploadModalGrades" style = "float: right;" class="glyphicon glyphicon-open"></button></td>
+								  	</tr>
+								  		
+								  	</tr>
+								  </tbody>
+								</table>
+								
+					</div>
+				</div>
+			</div>
 			         </div>
                  </div>
 
@@ -390,7 +460,7 @@
 			<!-- https://bootsnipp.com/snippets/featured/even-better-calendar -->
 			<div class="calendar col-md-4">
 				<div class="span12 float-right">
-    		<table class="table-condensed table-bordered table-striped">
+    		<table class="table-condensed table-bordered table-striped bg-white">
                 <thead>
                     <tr>
                       <th colspan="7">
