@@ -37,7 +37,6 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="allGrades.html">GradeBook</a></li>
-						<li class="nav-item"><a class="nav-link" href="Dropbox.html">Dropbox</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -56,10 +55,10 @@
                     Course Content
                   </a>
                   <a href="course.html" class="list-group-item list-group-item-action active">Course1</a>
-                  <a href="course2.html" class="list-group-item list-group-item-action">Course2</a>
-                  <a href="course3.html" class="list-group-item list-group-item-action">Course3</a>
-                  <a href="course4.html" class="list-group-item list-group-item-action">Course4</a>
-                  <a href="course5.html" class="list-group-item list-group-item-action">Course5</a>
+                  <a href="facultyCourse2.html" class="list-group-item list-group-item-action">Course2</a>
+                  <a href="facultyCourse3.html" class="list-group-item list-group-item-action">Course3</a>
+                  <a href="facultyCourse4.html" class="list-group-item list-group-item-action">Course4</a>
+                  <a href="facultyCourse5.html" class="list-group-item list-group-item-action">Course5</a>
                 </div>
 			</div>
             
@@ -74,13 +73,82 @@
 
                     </ul>
                 </nav>
-
+                
+<!-- Modal -->
+					<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Upload File</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        Upload Assignment Here. Not Implemented
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-warning">Upload</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+                <!-- Modal for creating -->
+					<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Create</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+                              
+                                <div class="form-group row">
+                                  <label for="example-text-input" class="col-2 col-form-label">Name</label>
+                                  <div class="col-10">
+                                    <input class="form-control" type="text" value="Enter Name" id="example-text-input">
+                                  </div>
+                                </div>	
+                                <div class="form-group row">
+                                  <label for="example-text-input" class="col-2 col-form-label">Total</label>
+                                  <div class="col-10">
+                                    <input class="form-control" type="text" value="Enter total if applicable (ex: 100)" id="example-text-input">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="example-date-input" class="col-2 col-form-label">Release Date</label>
+                                  <div class="col-10">
+                                    <input class="form-control" type="date" value="yyyy-mm-dd" id="example-date-input">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="example-date-input" class="col-2 col-form-label">Due Date</label>
+                                  <div class="col-10">
+                                    <input class="form-control" type="date" value="yyyy-mm-dd" id="example-date-input">
+                                  </div>
+                                    
+                                </div>
+                              
+                              
+                          </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button data-dismiss="modal" type="button" class="btn btn-warning" data-toggle="modal" data-target="#uploadModal">Upload</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+                
                 <div class="mt-5" id="lecture-content">
                 <div class="card">
                         <div class="card-header text-center" id="headingOne">
                             <h5 class="mb-0">
 
                                 <label> Lectures </label>
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#createModal" style="float:right;">Create Lecture</button>
                                 <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
                                     Course1
                                 </button> -->
@@ -90,39 +158,28 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
 
-                                <table class="table table-striped">
-                                  <!-- <thead>
-                                    <tr>
-                                      <th style="width: 30%" scope="col">Lectures</th>
+								<table class="table table-striped">
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Lectures</th>
+								      <th scope="col"></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Lecture1</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
+								    </tr>
+								    <tr>
+								      <td>Lecture2</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>								    </tr>
+								    <tr>
+								      <td>Lecture3</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
                                     </tr>
-                                  </thead> -->
-                                  <tbody>
-                                    <tr>
-                                      <td><a href="#">Lecture 1</a></td>
-                                   </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 2</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 3</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 4</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 5</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 6</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 7</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lecture 8</a></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+								  </tbody>
+								</table>
+
                             </div>
                         </div>
                     </div>
@@ -133,7 +190,9 @@
                         <div class="card-header text-center" id="headingOne">
                             <h5 class="mb-0">
 
-                                <label> Quizzes </label>
+                                <label> Quizes </label>
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#createModal" style="float:right;">Create Quiz</button>
+                                
                                 <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
                                     Course1
                                 </button> -->
@@ -143,39 +202,27 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
 
-                                <table class="table table-striped">
-                                  <!-- <thead>
-                                    <tr>
-                                      <th style="width: 30%" scope="col">Lectures</th>
+                                								<table class="table table-striped">
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Quizes</th>
+								      <th scope="col"></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Quiz1</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
+								    </tr>
+								    <tr>
+								      <td>Quiz2</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>								    </tr>
+								    <tr>
+								      <td>Quiz3</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
                                     </tr>
-                                  </thead> -->
-                                  <tbody>
-                                    <tr>
-                                      <td><a href="#">Quiz 1</a></td>
-                                   </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 2</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 3</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 4</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 5</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 6</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 7</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Quiz 8</a></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+								  </tbody>
+								</table>
                             </div>
                         </div>
                     </div>
@@ -187,6 +234,8 @@
                             <h5 class="mb-0">
 
                                 <label> Assignments </label>
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#createModal" style="float:right;">Create Assignment</button>
+                                
                                 <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
                                     Course1
                                 </button> -->
@@ -196,39 +245,27 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
 
-                                <table class="table table-striped">
-                                  <!-- <thead>
-                                    <tr>
-                                      <th style="width: 30%" scope="col">Lectures</th>
+                                								<table class="table table-striped">
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Assignments</th>
+								      <th scope="col"></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Assignment1</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
+								    </tr>
+								    <tr>
+								      <td>Assignment2</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>								    </tr>
+								    <tr>
+								      <td>Assignment3</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
                                     </tr>
-                                  </thead> -->
-                                  <tbody>
-                                    <tr>
-                                      <td><a href="#">Assignment 1</a></td>
-                                   </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 2</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 3</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 4</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 5</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 6</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 7</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Assignment 8</a></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+								  </tbody>
+								</table>
                             </div>
                         </div>
                     </div>
@@ -240,6 +277,8 @@
                             <h5 class="mb-0">
 
                                 <label> Labs </label>
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#createModal" style="float:right;">Create Lab</button>
+                                
                                 <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
                                     Course1
                                 </button> -->
@@ -249,39 +288,27 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
 
-                                <table class="table table-striped">
-                                  <!-- <thead>
-                                    <tr>
-                                      <th style="width: 30%" scope="col">Lectures</th>
+                                								<table class="table table-striped">
+								  <thead>
+								    <tr>
+								      <th style="width: 30%" scope="col">Labs</th>
+								      <th scope="col"></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Lab1</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
+								    </tr>
+								    <tr>
+								      <td>Lab2</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>								    </tr>
+								    <tr>
+								      <td>Lab3</td>
+								      <td><button data-toggle="modal" data-target="#uploadModal" class="glyphicon glyphicon-open"></button><button style="float:right;">Delete</button></td>
                                     </tr>
-                                  </thead> -->
-                                  <tbody>
-                                    <tr>
-                                      <td><a href="#">Lab 1</a></td>
-                                   </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 2</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 3</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 4</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 5</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 6</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 7</a></td>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">Lab 8</a></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+								  </tbody>
+								</table>
                             </div>
                         </div>
                     </div>
