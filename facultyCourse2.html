@@ -21,13 +21,24 @@
 			<div class="col-md-4 text-left">
 				<img style="float:left;" src="images/dalImage.jpg" height= "100" width= "250" alt="dal">
 			</div>
-			<div class = "col-md-4 text-center">
+			<div class = "col-md-2 text-center">
 				 <h1>Course</h1>
 			 </div>
-			<div class="col-md-4 text-right">
-				<button class="glyphicon glyphicon-envelope"></button>&nbsp&nbsp
-				<a href="index.html" style="border: 1px solid black; padding: 5px;" class="glyphicon glyphicon-user"> Profile</a>
-			</div>
+			<div class="col-md-6">
+                <nav class="navbar navbar-expand-sm" style="float:right;">
+                <ul class="navbar-nav bg-white">
+				   <li class="nav-item"> <button class="nav-link glyphicon glyphicon-envelope"></button>&nbsp</li>
+                   <li class="nav-item" ><div class="dropdown">
+				    <a href="#" style="border: 1px solid black; padding: 2px;" class="nav-link glyphicon glyphicon-user dropdown-toggle" role="button" id="dropDownMenuLink" data-toggle="dropdown" aria-expanded="false"> 
+                    Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropDownMenuLink">
+                    <a class="dropdown-item" href="index.html">Log out</a>
+                    </div>
+                    </div></li>
+                </ul>
+            </nav>
+            </div>
 		<div class="row">
 			<div class="col-md-12">
 				<nav class="navbar navbar-expand-sm navbar-light">
