@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="utf-8">
+    <title>BrightSpace</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/javascript.js"></script>
+
+</head>
+<body>
+
+    <div class=" bg-white border-bottom border-right border-left ml-5 mr-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-left">
+                <img style="float:left;" src="images/dalImage.jpg" height= "100" width= "250" alt="dal">
+            </div>
+            <div class = "col-md-2 text-center">
+                 <h1>Course</h1>
+             </div>
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-sm" style="float:right;">
+                <ul class="navbar-nav bg-white">
+           <li class="nav-item"> 
+                    <div class="dropdown">
+                    <button class="nav-link glyphicon glyphicon-envelope" id="dropdownMsgLink" data-toggle="dropdown" aria-expand="false"></button>&nbsp
+                   
+                    <div class="dropdown-menu p-3" aria-labelledby="dropdownMsgLink">
+                        <h3>Instant Message</h3>
+                        <p>Currently unimplemented</p>
+                    </div>
+                    </div>
+                </li>
+                   <li class="nav-item" ><div class="dropdown">
+            <a href="#" style="border: 1px solid black; padding: 2px;" class="nav-link glyphicon glyphicon-user dropdown-toggle" role="button" id="dropDownMenuLink" data-toggle="dropdown" aria-expanded="false"> 
+                    Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropDownMenuLink">
+                    <a class="dropdown-item" href="index.html">Log out</a>
+                    </div>
+                    </div></li>
+                </ul>
+            </nav>
+            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="mainta.html">BrightSpace</a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="mainta.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tagrade.html">GradeBook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Dropboxta.html">Dropbox</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class= " main-container bg-light pt-5 border-bottom border-right border-left ml-5 mr-5">
+    <div class="container">
+        <div class="row">
+            
+            <div class=" course-list col-md-2 float-left">
+                <div class="list-group">
+                  <a href="#" class=" list-group-item-warning list-group-item">
+                    Course Content
+                  </a>
+                  <a href="tacourse.html" class="list-group-item list-group-item-action">Course1</a>
+                  <a href="tacourse2.html" class="list-group-item list-group-item-action">Course2</a>
+                  <a href="tacourse3.html" class="list-group-item list-group-item-action active">Course3</a>
+                  <a href="tacourse4.html" class="list-group-item list-group-item-action">Course4</a>
+                  <a href="tacourse5.html" class="list-group-item list-group-item-action">Course5</a>
+                </div>
+            </div>
+            
+            <div class="main-content col-md-6 pl-5 h-100 pb-5">
+                <nav class="navbar navbar-expand-sm navbar-light border m-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item "><a class="nav-link" id="lecture" href="javascript:openLectures();">Lectures</a></li>
+                        <li class="nav-item "><a class="nav-link" id="assignmetns" href="javascript:openAssignments();">Assignment</a></li>
+                        <li class="nav-item "><a class="nav-link" id="quiz" href="javascript:openQuizzes();">Quiz</a></li>
+                        <li class="nav-item "><a class="nav-link" id="lab" href="javascript:openLabs();">Lab</a></li>
+                        <li class="nav-item "><a class="nav-link" id="lab" href="javascript:openGrades();">Grades</a></li>
+
+                    </ul>
+                </nav>
+
+                <div class="mt-5" id="lecture-content">
+                <div class="card">
+                        <div class="card-header text-center" id="headingOne">
+                            <h5 class="mb-0">
+
+                                <label> Lectures </label>
+                                <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
+                                    Course1
+                                </button> -->
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <table class="table table-striped">
+                                  <!-- <thead>
+                                    <tr>
+                                      <th style="width: 30%" scope="col">Lectures</th>
+                                    </tr>
+                                  </thead> -->
+                                  <tbody>
+                                    <tr>
+                                      <td><a href="#">Lecture 1</a></td>
+                                   </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 2</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 3</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 4</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 5</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 6</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 7</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lecture 8</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5" id="quiz-content" style="display:none">
+                <div class="card">
+                        <div class="card-header text-center" id="headingOne">
+                            <h5 class="mb-0">
+
+                                <label> Quizzes </label>
+                                <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
+                                    Course1
+                                </button> -->
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <table class="table table-striped">
+                                  <!-- <thead>
+                                    <tr>
+                                      <th style="width: 30%" scope="col">Lectures</th>
+                                    </tr>
+                                  </thead> -->
+                                  <tbody>
+                                    <tr>
+                                      <td><a href="#">Quiz 1</a></td>
+                                   </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 2</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 3</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 4</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 5</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 6</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 7</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Quiz 8</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5" id="assignment-content" style="display:none">
+                <div class="card">
+                        <div class="card-header text-center" id="headingOne">
+                            <h5 class="mb-0">
+
+                                <label> Assignments </label>
+                                <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
+                                    Course1
+                                </button> -->
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <table class="table table-striped">
+                                  <!-- <thead>
+                                    <tr>
+                                      <th style="width: 30%" scope="col">Lectures</th>
+                                    </tr>
+                                  </thead> -->
+                                  <tbody>
+                                    <tr>
+                                      <td><a href="#">Assignment 1</a></td>
+                                   </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 2</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 3</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 4</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 5</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 6</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 7</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Assignment 8</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+
+            <div class="mt-5" id="lab-content" style="display:none">
+                <div class="card">
+                        <div class="card-header text-center" id="headingOne">
+                            <h5 class="mb-0">
+
+                                <label> Labs </label>
+                                <!-- <button class="btn btn-link" data-toggle="collapse" aria-expanded="true" >
+                                    Course1
+                                </button> -->
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <table class="table table-striped">
+                                  <!-- <thead>
+                                    <tr>
+                                      <th style="width: 30%" scope="col">Lectures</th>
+                                    </tr>
+                                  </thead> -->
+                                  <tbody>
+                                    <tr>
+                                      <td><a href="#">Lab 1</a></td>
+                                   </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 2</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 3</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 4</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 5</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 6</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 7</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="#">Lab 8</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5" id="grade-content" style="display:none">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0 text-center">
+                                <label>
+                                    Grades
+                                </label>
+                            </h5>
+                        </div>
+                        
+                            <div class="card-body">
+
+                                <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th style="width: 30%" scope="col">Assignments</th>
+                                      <th scope="col">Grades</th>
+                                      <th scope="col">Feedback</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <td>Assignment1</td>
+                                        <td>90%</td>
+                                        <td>Good job</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assignment2</td>
+                                        <td>92%</td>
+                                        <td>Nice</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assignment3</td>
+                                        <td>80%</td>
+                                        <td>Work hard</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%" scope="col">Labs</th>
+                                            <th scope="col">Grades</th>
+                                            <th scope="col">Feedback</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Lab1</td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lab2</td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lab3</td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+
+
+            <!-- https://bootsnipp.com/snippets/featured/even-better-calendar -->
+            <div class="calendar col-md-4">
+                <div class="span12 float-right">
+            <table class="table-condensed table-bordered table-striped bg-white">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        <span class="btn-group">
+                            <a class="btn"><i class="icon-chevron-left"></i></a>
+                            <a class="btn active">November 2018</a>
+                            <a class="btn"><i class="icon-chevron-right"></i></a>
+                        </span>
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Su</th>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="muted">29</td>
+                        <td class="muted">30</td>
+                        <td class="muted">31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="btn-primary"><strong>20</strong></td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td class="muted">1</td>
+                        <td class="muted">2</td>
+                        <td class="muted">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
